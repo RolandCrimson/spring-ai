@@ -9,6 +9,16 @@
       "projectName": "first-project",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Ch02ChatModelApiApplication<ch02-chat-model-api>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.adacho.ch02_chat_model_api.Ch02ChatModelApiApplication",
+      "projectName": "ch02-chat-model-api",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

@@ -19,6 +19,16 @@
       "projectName": "ch02-chat-model-api",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Ch03PromptApplication<ch03-prompt>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.adaho.ch03_prompt.Ch03PromptApplication",
+      "projectName": "ch03-prompt",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

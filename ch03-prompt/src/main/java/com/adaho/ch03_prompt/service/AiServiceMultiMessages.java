@@ -8,6 +8,7 @@ import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.SystemMessage;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.ai.chat.prompt.ChatOptions;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
@@ -47,6 +48,10 @@ public class AiServiceMultiMessages {
         .messages(chatMemory)
         // 사용자 메시지 추가
         .user(question)
+        .options(ChatOptions.builder()
+            .model("gpt-4o-mini")
+            .temperature(0.3)
+            .build())
         // 동기 방식으로 답변 얻기
         .call()
         // ChatResponse로 반환하기

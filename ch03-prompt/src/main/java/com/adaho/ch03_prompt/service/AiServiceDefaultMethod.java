@@ -19,6 +19,7 @@ public class AiServiceDefaultMethod {
         .defaultSystem("적절한 감탄사, 웃음등을 넣어서 친절하게 대화를 해주세요.")
         .defaultOptions(ChatOptions.builder()
             .temperature(1.0)
+            .model("gpt-4o-mini")
             .maxTokens(300)
             .build())
         .build();

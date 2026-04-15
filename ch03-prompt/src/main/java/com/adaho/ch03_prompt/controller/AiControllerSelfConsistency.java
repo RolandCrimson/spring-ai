@@ -1,6 +1,5 @@
 package com.adaho.ch03_prompt.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,8 +15,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AiControllerSelfConsistency {
   // ##### 필드 #####
-  @Autowired
   private AiServiceSelfConsistency aiService;
+
+  public AiControllerSelfConsistency(AiServiceSelfConsistency aiService) {
+    this.aiService = aiService;
+  }
 
   // ##### 메소드 #####
   @PostMapping(value = "/self-consistency", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)

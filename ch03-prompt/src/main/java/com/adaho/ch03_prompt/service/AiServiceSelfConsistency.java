@@ -24,7 +24,12 @@ public class AiServiceSelfConsistency {
 
   // ##### 생성자 #####
   public AiServiceSelfConsistency(ChatClient.Builder chatClientBuilder) {
-    chatClient = chatClientBuilder.build();
+    chatClient = chatClientBuilder
+        .defaultOptions(ChatOptions.builder()
+            .temperature(1.0)
+            .model("gpt-4o-mini")
+            .build())
+        .build();
   }
 
   // ##### 메소드 #####
@@ -39,9 +44,6 @@ public class AiServiceSelfConsistency {
       // LLM 요청 및 응답 받기
       String output = chatClient.prompt()
           .user(userText)
-          .options(ChatOptions.builder()
-              .temperature(1.0)
-              .build())
           .call()
           .content();
 

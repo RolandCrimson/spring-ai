@@ -17,8 +17,11 @@ import reactor.core.publisher.Flux;
 @Slf4j
 public class AiControllerRoleAssignmentPrompt {
   // ##### 필드 #####
-  @Autowired
   private AiServiceRoleAssignmentPrompt aiService;
+
+  public AiControllerRoleAssignmentPrompt(@Autowired AiServiceRoleAssignmentPrompt aiService) {
+    this.aiService = aiService;
+  }
 
   // ##### 메소드 #####
   @PostMapping(value = "/role-assignment", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, produces = MediaType.APPLICATION_NDJSON_VALUE)

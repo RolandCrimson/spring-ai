@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.prompt.ChatOptions;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -19,7 +20,12 @@ public class AiServiceStepBackPrompt {
 
   // ##### 생성자 #####
   public AiServiceStepBackPrompt(ChatClient.Builder chatClientBuilder) {
-    chatClient = chatClientBuilder.build();
+    chatClient = chatClientBuilder
+        .defaultOptions(ChatOptions.builder()
+            .temperature(0.3)
+            .model("gpt-4o-mini")
+            .build())
+        .build();
   }
 
   // ##### 메소드 #####

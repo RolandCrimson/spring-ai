@@ -1,6 +1,7 @@
 package com.adaho.ch03_prompt.service;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.prompt.ChatOptions;
 import org.springframework.stereotype.Service;
 
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +15,12 @@ public class AiServiceChainOfThoughtPrompt {
 
   // ##### 생성자 #####
   public AiServiceChainOfThoughtPrompt(ChatClient.Builder chatClientBuilder) {
-    chatClient = chatClientBuilder.build();
+    chatClient = chatClientBuilder
+        .defaultOptions(ChatOptions.builder()
+            .temperature(0.5)
+            .model("gpt-4o-mini")
+            .build())
+        .build();
   }
 
   // ##### 메소드 #####

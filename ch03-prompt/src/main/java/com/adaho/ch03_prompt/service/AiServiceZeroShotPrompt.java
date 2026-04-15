@@ -26,6 +26,7 @@ public class AiServiceZeroShotPrompt {
   public AiServiceZeroShotPrompt(ChatClient.Builder chatClientBuilder) {
     chatClient = chatClientBuilder
         .defaultOptions(ChatOptions.builder()
+            .model("gpt-4o-mini")
             .temperature(0.0)
             .maxTokens(4)
             .build())

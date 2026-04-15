@@ -15,7 +15,13 @@ public class AiServiceFewShotPrompt {
 
   // ##### 생성자 #####
   public AiServiceFewShotPrompt(ChatClient.Builder chatClientBuilder) {
-    chatClient = chatClientBuilder.build();
+    chatClient = chatClientBuilder
+        .defaultOptions(ChatOptions.builder()
+            .model("gpt-4o-mini")
+            .temperature(0.0)
+            .maxTokens(300)
+            .build())
+        .build();
   }
 
   // ##### 메소드 #####
@@ -34,7 +40,7 @@ public class AiServiceFewShotPrompt {
           "ingredients": ["cheese", "tomato sauce", "pepperoni"]
         }
 
-        예시1:
+        예시2:
         큰 피자 하나, 토마토 소스랑 바질, 모짜렐라 올려서 주세요.
         JSON 응답:
         {
@@ -51,10 +57,6 @@ public class AiServiceFewShotPrompt {
 
     // LLM으로 요청하고 응답을 받음
     String pizzaOrderJson = chatClient.prompt(prompt)
-        .options(ChatOptions.builder()
-            .temperature(0.0)
-            .maxTokens(300)
-            .build())
         .call()
         .content();
 

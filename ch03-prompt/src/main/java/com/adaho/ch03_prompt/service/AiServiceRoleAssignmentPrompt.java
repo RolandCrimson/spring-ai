@@ -32,6 +32,7 @@ public class AiServiceRoleAssignmentPrompt {
         .user("요청사항: %s".formatted(requirements))
         // 대화 옵션 설정
         .options(ChatOptions.builder()
+            .model("gpt-4o-mini")
             .temperature(1.0)
             .maxTokens(1000)
             .build())

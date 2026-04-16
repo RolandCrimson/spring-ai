@@ -28,8 +28,8 @@ public class AiControllerMapOutputConverter {
   // ##### 메소드 #####
   @PostMapping(value = "/map-output-converter", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
   public Map<String, Object> mapOutputConverter(@RequestParam("hotel") String hotel) {
-    Map<String, Object> hotelInfo = aiService.mapOutputConverterLowLevel(hotel);
-    // Map<String, Object> hotelInfo = aiService.mapOutputConverterHighLevel(hotel);
+    // Map<String, Object> hotelInfo = aiService.mapOutputConverterLowLevel(hotel);
+    Map<String, Object> hotelInfo = aiService.mapOutputConverterHighLevel(hotel);
     return hotelInfo;
   }
 }

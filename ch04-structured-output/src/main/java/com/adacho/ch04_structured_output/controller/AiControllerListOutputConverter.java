@@ -27,8 +27,8 @@ public class AiControllerListOutputConverter {
   // ##### 메소드 #####
   @PostMapping(value = "/list-output-converter", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
   public List<String> listOutputConverter(@RequestParam("city") String city) {
-    List<String> hotelList = aiService.listOutputConverterLowLevel(city);
-    // List<String> hotelList = aiService.listOutputConverterHighLevel(city);
+    // List<String> hotelList = aiService.listOutputConverterLowLevel(city);
+    List<String> hotelList = aiService.listOutputConverterHighLevel(city);
     return hotelList;
   }
 }

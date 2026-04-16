@@ -3,6 +3,7 @@ package com.adacho.ch04_structured_output.service;
 import java.util.Map;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.prompt.ChatOptions;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.converter.MapOutputConverter;
@@ -18,7 +19,12 @@ public class AiServiceMapOutputConverter {
 
   // ##### 생성자 #####
   public AiServiceMapOutputConverter(ChatClient.Builder chatClientBuilder) {
-    chatClient = chatClientBuilder.build();
+    chatClient = chatClientBuilder
+        .defaultOptions(ChatOptions.builder()
+            .temperature(0.3)
+            .model("gpt-4o-mini")
+            .build())
+        .build();
   }
 
   // ##### 메소드 #####

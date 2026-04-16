@@ -16,7 +16,12 @@ public class AiServiceSystemMessage {
 
   // ##### 생성자 #####
   public AiServiceSystemMessage(ChatClient.Builder chatClientBuilder) {
-    chatClient = chatClientBuilder.build();
+    chatClient = chatClientBuilder
+        .defaultOptions(ChatOptions.builder()
+            .temperature(0.3)
+            .model("gpt-4o-mini")
+            .build())
+        .build();
   }
 
   // ##### 메소드 #####
@@ -27,7 +32,7 @@ public class AiServiceSystemMessage {
                유효한 JSON을 반환하세요.
             """)
         .user("%s".formatted(review))
-        .options(ChatOptions.builder().temperature(0.0).build())
+        .options(ChatOptions.builder().model("gpt-4o-mini").temperature(0.0).build())
         .call()
         .entity(ReviewClassification.class);
     return reviewClassification;

@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ch05VoiceChatApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch05_voice_chat.Ch05VoiceChatApplication",
+      "projectName": "ch05-voice-chat"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-FirstProjectApplication<first-project>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -27,6 +34,16 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.adaho.ch03_prompt.Ch03PromptApplication",
       "projectName": "ch03-prompt",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Ch04StructuredOutputApplication<ch04-structured-output>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.adacho.ch04_structured_output.Ch04StructuredOutputApplication",
+      "projectName": "ch04-structured-output",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }

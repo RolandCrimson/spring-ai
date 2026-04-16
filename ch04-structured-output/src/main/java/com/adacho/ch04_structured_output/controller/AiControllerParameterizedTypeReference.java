@@ -30,8 +30,9 @@ public class AiControllerParameterizedTypeReference {
   // ##### 메소드 #####
   @PostMapping(value = "/generic-bean-output-converter", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
   public List<Hotel> genericBeanOutputConverter(@RequestParam("cities") String cities) {
-    // List<Hotel> hotelList = aiService.genericBeanOutputConverterLowLevel(cities);
-    List<Hotel> hotelList = aiService.genericBeanOutputConverterHighLevel(cities);
+    List<Hotel> hotelList = aiService.genericBeanOutputConverterLowLevel(cities);
+    // List<Hotel> hotelList =
+    // aiService.genericBeanOutputConverterHighLevel(cities);
     return hotelList;
   }
 }

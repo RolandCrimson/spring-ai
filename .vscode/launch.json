@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ch09VectorStoreChatMemoryApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch09_vector_store_chat_memory.Ch09VectorStoreChatMemoryApplication",
+      "projectName": "ch09-vector-store-chat-memory"
+    },
+    {
+      "type": "java",
+      "name": "Ch09InMemoryChatMemoryApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch09_in_memory_chat_memory.Ch09InMemoryChatMemoryApplication",
+      "projectName": "ch09-in-memory-chat-memory"
+    },
+    {
+      "type": "java",
+      "name": "Ch08EmbeddingVectorStoreApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch08_embedding_vector_store.Ch08EmbeddingVectorStoreApplication",
+      "projectName": "ch08-embedding-vector-store"
+    },
+    {
+      "type": "java",
       "name": "Ch05VoiceChatApplication",
       "request": "launch",
       "mainClass": "com.adacho.ch05_voice_chat.Ch05VoiceChatApplication",

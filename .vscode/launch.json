@@ -1,72 +1,86 @@
 {
   "configurations": [
     {
-      "type": "java",
-      "name": "Ch09VectorStoreChatMemoryApplication",
-      "request": "launch",
-      "mainClass": "com.adacho.ch09_vector_store_chat_memory.Ch09VectorStoreChatMemoryApplication",
-      "projectName": "ch09-vector-store-chat-memory"
+        "type": "java",
+        "name": "Ch09CassandraChatMemoryApplication",
+        "request": "launch",
+        "mainClass": "com.adacho.ch09_cassandra_chat_memory.Ch09CassandraChatMemoryApplication",
+        "projectName": "ch09-cassandra-chat-memory"
     },
     {
-      "type": "java",
-      "name": "Ch09InMemoryChatMemoryApplication",
-      "request": "launch",
-      "mainClass": "com.adacho.ch09_in_memory_chat_memory.Ch09InMemoryChatMemoryApplication",
-      "projectName": "ch09-in-memory-chat-memory"
+        "type": "java",
+        "name": "Ch09JdbcChatMemoryApplication",
+        "request": "launch",
+        "mainClass": "com.adacho.ch09_jdbc_chat_memory.Ch09JdbcChatMemoryApplication",
+        "projectName": "ch09-jdbc-chat-memory"
     },
     {
-      "type": "java",
-      "name": "Ch08EmbeddingVectorStoreApplication",
-      "request": "launch",
-      "mainClass": "com.adacho.ch08_embedding_vector_store.Ch08EmbeddingVectorStoreApplication",
-      "projectName": "ch08-embedding-vector-store"
+        "type": "java",
+        "name": "Ch09VectorStoreChatMemoryApplication",
+        "request": "launch",
+        "mainClass": "com.adacho.ch09_vector_store_chat_memory.Ch09VectorStoreChatMemoryApplication",
+        "projectName": "ch09-vector-store-chat-memory"
     },
     {
-      "type": "java",
-      "name": "Ch05VoiceChatApplication",
-      "request": "launch",
-      "mainClass": "com.adacho.ch05_voice_chat.Ch05VoiceChatApplication",
-      "projectName": "ch05-voice-chat"
+        "type": "java",
+        "name": "Ch09InMemoryChatMemoryApplication",
+        "request": "launch",
+        "mainClass": "com.adacho.ch09_in_memory_chat_memory.Ch09InMemoryChatMemoryApplication",
+        "projectName": "ch09-in-memory-chat-memory"
     },
     {
-      "type": "java",
-      "name": "Spring Boot-FirstProjectApplication<first-project>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.adacho.firstproject.FirstProjectApplication",
-      "projectName": "first-project",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
+        "type": "java",
+        "name": "Ch08EmbeddingVectorStoreApplication",
+        "request": "launch",
+        "mainClass": "com.adacho.ch08_embedding_vector_store.Ch08EmbeddingVectorStoreApplication",
+        "projectName": "ch08-embedding-vector-store"
     },
     {
-      "type": "java",
-      "name": "Spring Boot-Ch02ChatModelApiApplication<ch02-chat-model-api>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.adacho.ch02_chat_model_api.Ch02ChatModelApiApplication",
-      "projectName": "ch02-chat-model-api",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
+        "type": "java",
+        "name": "Ch05VoiceChatApplication",
+        "request": "launch",
+        "mainClass": "com.adacho.ch05_voice_chat.Ch05VoiceChatApplication",
+        "projectName": "ch05-voice-chat"
     },
     {
-      "type": "java",
-      "name": "Spring Boot-Ch03PromptApplication<ch03-prompt>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.adaho.ch03_prompt.Ch03PromptApplication",
-      "projectName": "ch03-prompt",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
+        "type": "java",
+        "name": "Spring Boot-FirstProjectApplication<first-project>",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "mainClass": "com.adacho.firstproject.FirstProjectApplication",
+        "projectName": "first-project",
+        "args": "",
+        "envFile": "${workspaceFolder}/.env"
     },
     {
-      "type": "java",
-      "name": "Spring Boot-Ch04StructuredOutputApplication<ch04-structured-output>",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "mainClass": "com.adacho.ch04_structured_output.Ch04StructuredOutputApplication",
-      "projectName": "ch04-structured-output",
-      "args": "",
-      "envFile": "${workspaceFolder}/.env"
+        "type": "java",
+        "name": "Spring Boot-Ch02ChatModelApiApplication<ch02-chat-model-api>",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "mainClass": "com.adacho.ch02_chat_model_api.Ch02ChatModelApiApplication",
+        "projectName": "ch02-chat-model-api",
+        "args": "",
+        "envFile": "${workspaceFolder}/.env"
+    },
+    {
+        "type": "java",
+        "name": "Spring Boot-Ch03PromptApplication<ch03-prompt>",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "mainClass": "com.adaho.ch03_prompt.Ch03PromptApplication",
+        "projectName": "ch03-prompt",
+        "args": "",
+        "envFile": "${workspaceFolder}/.env"
+    },
+    {
+        "type": "java",
+        "name": "Spring Boot-Ch04StructuredOutputApplication<ch04-structured-output>",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "mainClass": "com.adacho.ch04_structured_output.Ch04StructuredOutputApplication",
+        "projectName": "ch04-structured-output",
+        "args": "",
+        "envFile": "${workspaceFolder}/.env"
     }
-  ]
+]
 }

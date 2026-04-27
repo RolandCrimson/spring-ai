@@ -2,6 +2,51 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ch12McpServerSseWebfluxApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch12_mcp_server_sse_webflux_application.Ch12McpServerSseWebfluxApplication",
+      "projectName": "ch12-mcp-server-sse-webflux-application"
+    },
+    {
+      "type": "java",
+      "name": "Ch12McpServerSseWebfluxApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch12_mcp_server_sse_webflux.Ch12McpServerSseWebfluxApplication",
+      "projectName": "ch12-mcp-server-sse-webflux"
+    },
+    {
+      "type": "java",
+      "name": "Ch12McpServerSseWebmvcApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch12_mcp_server_sse_webmvc_application.Ch12McpServerSseWebmvcApplication",
+      "projectName": "ch12-mcp-server-sse-webmvc-application"
+    },
+    {
+      "type": "java",
+      "name": "Ch12McpServerSseWebmvcApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch12_mcp_server_sse_webmvc.Ch12McpServerSseWebmvcApplication",
+      "projectName": "ch12-mcp-server-sse-webmvc",
+      "noDebug": true,
+      "__progressId": "1a0d4791-0e69-4330-bc25-4bf877bfb3cd",
+      "__origin": "internal"
+    },
+    {
+      "type": "java",
+      "name": "Ch12McpServerStdioApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch12_mcp_server_stdio_application.Ch12McpServerStdioApplication",
+      "projectName": "ch12-mcp-server-stdio-application"
+    },
+    {
+      "type": "java",
+      "name": "Ch12McpServerStdioDatetimeApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch12_mcp_server_stdio_datetime.Ch12McpServerStdioDatetimeApplication",
+      "projectName": "ch12-mcp-server-stdio-datetime"
+    },
+    {
+      "type": "java",
       "name": "Ch10RagApplication",
       "request": "launch",
       "mainClass": "com.adacho.ch10_rag.Ch10RagApplication",

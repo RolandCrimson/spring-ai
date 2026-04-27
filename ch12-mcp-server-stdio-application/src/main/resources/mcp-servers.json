@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "ch12-mcp-server-stdio-datetime": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:/ai-class/spring-ai/ch12-mcp-server-stdio-datetime/target/ch12-mcp-server-stdio-datetime-0.0.1-SNAPSHOT.jar"
+      ]
+    },
+    "ch12-mcp-server-stdio-boombarrier": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:/ai-class/spring-ai/ch12-mcp-server-stdio-boombarrier/target/ch12-mcp-server-stdio-boombarrier-0.0.1-SNAPSHOT.jar"
+      ]
+    },
+    "ch12-mcp-server-stdio-filesystem": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:/ai-class/spring-ai/ch12-mcp-server-stdio-filesystem/target/ch12-mcp-server-stdio-filesystem-0.0.1-SNAPSHOT.jar"
+      ]
+    },
+    "ch12-mcp-server-stdio-internetsearch": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:/ai-class/spring-ai/ch12-mcp-server-stdio-internetsearch/target/ch12-mcp-server-stdio-internetsearch-0.0.1-SNAPSHOT.jar"
+      ]
+    }
+  }
+}

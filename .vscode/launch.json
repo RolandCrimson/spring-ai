@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ch14MultiAgentApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch14_multi_agent.Ch14MultiAgentApplication",
+      "projectName": "ch14-multi-agent"
+    },
+    {
+      "type": "java",
+      "name": "Ch13AgentApplication",
+      "request": "launch",
+      "mainClass": "com.adacho.ch13_agent.Ch13AgentApplication",
+      "projectName": "ch13-agent"
+    },
+    {
+      "type": "java",
       "name": "Ch12McpServerSseWebfluxApplication",
       "request": "launch",
       "mainClass": "com.adacho.ch12_mcp_server_sse_webflux_application.Ch12McpServerSseWebfluxApplication",
